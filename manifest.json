@@ -1,0 +1,52 @@
+{
+    "manifest_version": 3,
+    "name": "cayw, overleaf",
+    "version": "0.1.0",
+    "description": "Cite as you write in overleaf web page",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/icon16.png",
+            "24": "images/icon24.png",
+            "32": "images/icon32.png"
+        }
+    },
+    "commands": {
+        "insert-citation": {
+            "suggested_key": {
+                "default": "Ctrl+Period"
+            },
+            "description": "Insert citation"
+        },
+        "insert-bibliography": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Period"
+            },
+            "description": "Insert Bibliography"
+        }
+    },
+    "background": {
+        "service_worker": "service-worker.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.overleaf.com/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "matches": ["*://*.overleaf.com/*"],
+            "resources": ["images/icon32.png"]
+        }
+    ],
+    "permissions": [
+        "commands",
+        "management",
+        "tabs"
+    ],
+    "host_permissions": [
+        "http://localhost:23119/*",
+        "http://127.0.0.1:23119/*"
+    ]
+}
