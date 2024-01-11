@@ -48,5 +48,6 @@
     "host_permissions": [
         "http://localhost:23119/*",
         "http://127.0.0.1:23119/*"
-    ]
+    ],
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzxzSM1RTnqojvnwechjBcodmgLKUKz4WUnpOdqxuCho5NQ8VDXH4SnlOAys2EPthUeMKjrg4ImQWnRIXutT+zo4B/BDvJEXM0+uh6F9mRVByNG2mLM/M7PLhthiIqv6n3M5DbuGgScR4NKPgxrJdYJV5J4EeXm0dhKY2d4I4IBWW9CyLF0jfBc3oOYpfNEb8xB0ngknf5V0r1Zs57t7EPdTA4q8uByIEHVmVLo7h81rmYTam8i4Kn1z4aIE+T/ojDveaZ6sIKybUYxkqGgBFLvI2N7bgNji2Zs2wKWf705fEAiqhJOUhRTVMe8RiWsXr0LVPTrXvNH9KKmrl6os53QIDAQAB"
 }
