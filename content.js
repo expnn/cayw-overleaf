@@ -104,11 +104,10 @@ function zotWarnAndAsk() {
 }
 
 
-const editor = document.getElementById("editor");
-
 function makeInsert(insert_info) {
     const clear_node = insert_info.clear_node;
     const payload = insert_info.data;
+    const editor = document.getElementById("panel-source-editor");
 
     if (clear_node) {
         var elem = editor.getElementsByClassName(clear_node);
@@ -236,6 +235,8 @@ function makeInsert(insert_info) {
 
 
 function prepare_fetch_inputs(message) {
+    const editor = document.getElementById("panel-source-editor");
+
     function extract_collection(doc) {
         // console.debug(LOG_PREFIX, "[match bib collection]: ", doc);
         const match = COLLECTION_RE.exec(doc);
